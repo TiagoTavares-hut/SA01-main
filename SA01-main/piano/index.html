@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piano Simples</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- Logo e título do aplicativo -->
+      <a class="navbar-brand" href="" alt="Logo" width="30" height="28" class="d-inline-block align-text-top">
+        <img height="28" src="./img/12.png"> <!-- Imagem do logo -->
+        Piano Simples
+      </a>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Título principal do piano virtual -->
+  <h1>Piano Virtual</h1>
+  <hr> <!-- Linha horizontal para separação -->
+  <br>
+  
+  <!-- Div que contém as teclas do piano -->
+  <div class="piano">
+    <!-- Cada tecla é um div com a classe 'key' e um atributo 'data-note' para identificar a nota -->
+    <div class="key" data-note="C">C</div>
+    <div class="key" data-note="D">D</div>
+    <div class="key" data-note="E">E</div>
+    <div class="key" data-note="F">F</div>
+    <div class="key" data-note="G">G</div>
+    <div class="key" data-note="A">A</div>
+    <div class="key" data-note="B">B</div>
+  </div>
+
+  <!-- Elementos de áudio para cada nota do piano -->
+  <audio id="C" src="./sound/334538__teddy_frost__c4.wav"></audio>
+  <audio id="D" src="./sound/334536__teddy_frost__piano-normal-d4.wav"></audio>
+  <audio id="E" src="./sound/334542__teddy_frost__e4.wav"></audio>
+  <audio id="F" src="./sound/334541__teddy_frost__f4.wav"></audio>
+  <audio id="G" src="./sound/334540__teddy_frost__g4.wav"></audio>
+  <audio id="A" src="./sound/334534__teddy_frost__piano-a4-sound.wav"></audio>
+  <audio id="B" src="./sound/334539__teddy_frost__b4.wav"></audio>
+
+  <!-- Inclusão do script JavaScript que contém a lógica do piano -->
+  <script src="script.js"></script>
+</body>
+<!-- Inclusão do JavaScript do Bootstrap para funcionalidades interativas -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
